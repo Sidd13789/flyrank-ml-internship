@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FlyRank ML Internship Capstone | Siddhartha Dwivedi</title>
+
+<style>
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+    line-height:1.8;
+    background:#f8f9fa;
+    color:#333;
+}
+h1{
+    text-align:center;
+    color:#0d47a1;
+}
+h2{
+    color:#1565c0;
+    border-bottom:2px solid #1565c0;
+    padding-bottom:5px;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+table,th,td{
+    border:1px solid #999;
+}
+th,td{
+    padding:10px;
+    text-align:center;
+}
+th{
+    background:#1565c0;
+    color:white;
+}
+.section{
+    background:white;
+    padding:20px;
+    margin-top:25px;
+    border-radius:8px;
+    box-shadow:0px 2px 8px rgba(0,0,0,.1);
+}
+a{
+    color:#1565c0;
+}
+footer{
+    margin-top:40px;
+    text-align:center;
+    color:gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>FlyRank ML Internship Capstone</h1>
+
+<p align="center">
+<b>Author:</b> Siddhartha Dwivedi
+<b>Email:</b>
+<a href="mailto:siddharthdwivedi7077@gmail.com">
+siddharthdwivedi7077@gmail.com
+</a>
+</p>
+
+<div class="section">
+
+<h2>Abstract</h2>
+
+<p>
+
+This project analyzes the FlyRank ML Internship dataset to study content performance using machine learning techniques.
+A Random Forest classifier was developed and evaluated against the Week-4 baseline using the same evaluation procedure.
+The model achieved strong predictive performance on the evaluation dataset.
+Additional validation and leakage checks were performed to improve the trustworthiness of the results.
+The findings should be interpreted as decision-support rather than automated business decisions.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>1. Research Question</h2>
+
+<p>
+
+Can machine learning identify content that may require refresh or optimization using historical search and engagement signals?
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>2. Dataset</h2>
+
+<ul>
+
+<li>Dataset: FlyRank ML Internship Dataset</li>
+
+<li>Approximately 30,000 anonymized content records</li>
+
+<li>No client names or private information included</li>
+
+<li>Target Variable: <b>trend_direction</b></li>
+
+<li>Public-safe dataset used for educational purposes</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>3. Methodology</h2>
+
+<ul>
+
+<li>Baseline model developed during Week-4</li>
+
+<li>Random Forest Classifier selected for modeling</li>
+
+<li>80/20 Train-Test Split</li>
+
+<li>Categorical variables encoded using LabelEncoder</li>
+
+<li>Model evaluated using Accuracy, Precision, Recall and F1 Score</li>
+
+<li>Leakage audit performed before interpreting results</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>4. Results (Model vs Baseline)</h2>
+
+<table>
+
+<tr>
+
+<th>Model</th>
+
+<th>Metric</th>
+
+</tr>
+
+<tr>
+
+<td>Week-4 Baseline</td>
+
+<td>Your Week-4 Baseline Score</td>
+
+</tr>
+
+<tr>
+
+<td>Random Forest</td>
+
+<td>99.95%</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<p>
+
+The Random Forest model achieved higher predictive performance than the baseline using the same evaluation procedure.
+These observations are intended for decision-support only.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>5. Limitations</h2>
+
+<ul>
+
+<li>The model was evaluated only on the internship dataset.</li>
+
+<li>Results may not generalize to unseen production data.</li>
+
+<li>The work does not replace expert human review.</li>
+
+<li>Further validation with grouped or time-aware splits is recommended.</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>6. Ranked Recommendations</h2>
+
+<ol>
+
+<li>Review pages with declining trend direction.</li>
+
+<li>Prioritize high-impression content for refresh.</li>
+
+<li>Use model predictions only as decision-support.</li>
+
+<li>Perform manual review before publishing updates.</li>
+
+<li>Monitor model performance over time.</li>
+
+</ol>
+
+</div>
+
+<div class="section">
+
+<h2>7. Reproducibility</h2>
+
+<p>
+
+All notebooks, implementation details, and supporting files are available in the GitHub repository.
+
+</p>
+
+<p>
+
+<b>Repository:</b>
+
+<br><br>
+
+<a href="https://github.com/Sidd13789/flyrank-ml-internship">
+
+https://github.com/Sidd13789/flyrank-ml-internship
+
+</a>
+
+</p>
+
+<h3>Project Notebooks</h3>
+
+<ul>
+
+<li><a href="https://github.com/Sidd13789/flyrank-ml-internship/blob/main/work/notebooks/w01_research_question.ipynb">Week 01 – Research Question</a></li>
+
+<li><a href="https://github.com/Sidd13789/flyrank-ml-internship/blob/main/work/notebooks/w02_ml_task_framing.ipynb">Week 02 – ML Task Framing</a></li>
+
+<li><a href="https://github.com/Sidd13789/flyrank-ml-internship/blob/main/work/notebooks/w03_data_contract.ipynb">Week 03 – Data Contract</a></li>
+
+<li><a href="https://github.com/Sidd13789/flyrank-ml-internship/blob/main/work/notebooks/w04_baseline_score.ipynb">Week 04 – Baseline</a></li>
+
+<li><a href="https://github.com/Sidd13789/flyrank-ml-internship/blob/main/work/notebooks/w05_model.ipynb">Week 05 – Modeling</a></li>
+
+<li><a href="https://github.com/Sidd13789/flyrank-ml-internship/blob/main/work/notebooks/w06_validation_audit.ipynb">Week 06 – Validation Audit</a></li>
+
+<li><a href="https://github.com/Sidd13789/flyrank-ml-internship/blob/main/work/notebooks/w07_action_playbook.ipynb">Week 07 – Action Playbook</a></li>
+
+<li><a href="https://github.com/Sidd13789/flyrank-ml-internship/blob/main/work/notebooks/capstone.ipynb">Capstone Notebook</a></li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Acknowledgments</h2>
+
+<p>
+
+Built on the <b>FlyRank ML Internship Dataset</b>.
+
+</p>
+
+<p>
+
+Data Credit:
+
+<a href="https://flyrank.ai">
+
+https://flyrank.ai
+
+</a>
+
+</p>
+
+</div>
+
+<footer>
+
+<p>
+
+© 2026 Siddhartha Dwivedi | FlyRank ML Internship Capstone
+
+</p>
+
+</footer>
+
+</body>
+</html>
