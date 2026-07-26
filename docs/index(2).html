@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Search Ranking & Discoverability Capstone</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:1000px;margin:auto;padding:30px;line-height:1.7;background:#f5f7fb;color:#222}
+header{background:#1f4e79;color:#fff;padding:30px;border-radius:10px}
+section{background:#fff;margin:20px 0;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+h1,h2{margin-top:0}
+img{max-width:100%;border:1px solid #ddd;border-radius:8px;margin:10px 0}
+footer{text-align:center;color:#666;padding:20px}
+code{background:#eee;padding:2px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Google Search Ranking & Discoverability Capstone</h1>
+<p><strong>Machine Learning Track – FlyRank ML Internship</strong></p>
+<p>Author: Siddhartha Dwivedi</p>
+</header>
+
+<section>
+<h2>Abstract</h2>
+<p>This project investigates whether historical SEO and engagement signals can prioritize content refresh actions.
+A Random Forest classifier was trained on the anonymized FlyRank ML Internship dataset.
+The model predicts <code>trend_direction</code> to support editorial prioritization.
+Results indicate historical performance signals contain useful predictive information.
+The system is intended as a decision-support tool rather than automated decision making.</p>
+</section>
+
+<section>
+<h2>Introduction</h2>
+<p>The objective is to identify pages that should be refreshed, monitored, or maintained using historical search-performance signals. Recommendations are intended to assist human reviewers.</p>
+</section>
+
+<section>
+<h2>Data</h2>
+<ul>
+<li>Dataset: FlyRank ML Internship anonymized production dataset</li>
+<li>Records: 30,000</li>
+<li>Features: 44</li>
+<li>No client names, URLs, domains, or private queries were used.</li>
+</ul>
+</section>
+
+<section>
+<h2>Methodology</h2>
+<ul>
+<li>Model: Random Forest Classifier</li>
+<li>Target: <code>trend_direction</code></li>
+<li>Removed identifier columns and potential leakage feature <code>trend_pct</code>.</li>
+<li>Handled missing values and encoded categorical features.</li>
+<li>80/20 train-test split.</li>
+<li>Evaluation Metric: Accuracy.</li>
+</ul>
+</section>
+
+<section>
+<h2>Results</h2>
+<p>The Random Forest model outperformed the baseline on the evaluation split. Results should be interpreted as observed relationships rather than causal conclusions.</p>
+
+<h3>Embedded Figures</h3>
+<p>If these images exist in your repository under <code>work/figures/</code>, they will appear automatically.</p>
+
+<img src="work/figures/trend_direction_distribution.png" alt="Trend Distribution">
+<img src="work/figures/model_accuracy.png" alt="Model Accuracy">
+<img src="work/figures/feature_importance.png" alt="Feature Importance">
+<img src="work/figures/recommendation_distribution.png" alt="Recommendation Distribution">
+
+</section>
+
+<section>
+<h2>Limitations</h2>
+<ul>
+<li>Based on historical anonymized data.</li>
+<li>Does not prove future Google search performance.</li>
+<li>Supports human decision-making only.</li>
+<li>Further grouped/time-aware validation is recommended.</li>
+</ul>
+</section>
+
+<section>
+<h2>Ranked Recommendations</h2>
+<ol>
+<li>Refresh outdated content.</li>
+<li>Improve click-through rate.</li>
+<li>Increase user engagement.</li>
+<li>Monitor stable content.</li>
+<li>No immediate action for well-performing content.</li>
+</ol>
+</section>
+
+<section>
+<h2>Reproducibility</h2>
+<p>Source code, notebooks, and generated figures are available in this GitHub repository.</p>
+</section>
+
+<section>
+<h2>Acknowledgments</h2>
+<p>Built on the <strong>FlyRank ML Internship dataset</strong>. Data credit: <a href="https://flyrank.ai" target="_blank">https://flyrank.ai</a>.</p>
+</section>
+
+<footer>
+<p>© 2026 Siddhartha Dwivedi | FlyRank ML Internship Capstone</p>
+</footer>
+
+</body>
+</html>
